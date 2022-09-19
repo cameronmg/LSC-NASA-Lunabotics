@@ -1,0 +1,116 @@
+nav:
+  - Home: index.md
+  - Github Repos:
+      - LSC-RMC Organization: https://github.com/NASA-LSC-RMC 
+  - Languages:
+      - Setup: python-setup.md
+      - Posts: python.md
+    
+
+  - Operating Systems:
+      - OSX: osx-setup.md
+      - Linux:
+          - Raspbian: raspbian.md
+          - Ubuntu: ubuntu.md
+          - Generic Linux: linux.md
+          - Linux Commands:
+              - ssh: ssh.md
+              - apt: apt.md
+      - Unix: unix.md
+  - ROS:
+      - Installation: ros-installation.md
+      - Commands: ros-commands.md
+      - ROS Serial: ros-serial.md
+      - Miscellaneous: ros-misc.md
+      - ROS Master SD Card: ros-master.md
+      - Gazebo: gazebo.md
+  - Software:
+      - Links: software-links.md
+      - Software Services: services.md
+      - Git: git.md
+      - Jupyter Notebooks: jupyter.md
+      - Jupyter Options: jupyter-options.md
+      - OpenCV: opencv.md
+      - GraphQL: graphql.md
+      - RoboMaker: robomaker.md
+      - Markdown: markdown.md
+      - MkDocs: mkdocs.md
+      - Databases: databases.md
+  - Hardware:
+      - Raspi Hats: raspihats.md
+      - Sensors: sensors.md
+      - SD Cards: sd-cards.md
+      - Metro Mini: metro-mini.md
+      - Blinkt: blinkt.md
+      - Logitech Joystick: joystick.md
+      - Nvidia Jetson TX2: jetsontx2.md
+      - roboRIO: roborio.md
+      - Intel Euclid: euclid.md
+      - NeoTrellis M4: trellis.md
+      - Circuit Playground: cpx.md
+      - Crickit/CPX and CircuitPython: cricket.md
+      - BBC micro:bit: microbit.md
+  - Tutorials:
+      - vim: vim.md
+      - Shell: shell.md
+      - Machine Learning: ml.md
+  - Robots:
+      - TurtleBot3: turtlebot3.md
+  - NASA-RMC:
+      - Notes: frc-notes.md
+      - Networking: rmc-networking.md
+  # - Robotics: robotics.md
+  - Education:
+      - Teaching: teaching.md
+  - Advice: advice.md
+  - Miscellaneous: interesting.md
+
+site_name: Lonestar NASA-RMC Robotics
+site_url: https://mattsegura.github.io/LSCRMC-Docs/
+site_description: Lonestar NASA-RMC Robotics Documentation
+site_author: Lonestar NASA-RMC Robotics Team
+
+repo_url: https://github.com/mattsegura/LSCRMC-Docs
+repo_name: "GitHub Home"
+
+theme:
+  name: "material"
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  language: en
+  feature:
+    tabs: false
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: "images/lsc.jpg"
+  favicon: "assets/images/favicon.ico"
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+google_analytics: ["UA-90285378-1", "auto"]
